@@ -5,10 +5,6 @@
         Nav,
         NavItem,
         NavLink,
-        Dropdown,
-        DropdownToggle,
-        DropdownMenu,
-        DropdownItem
     } from 'sveltestrap';
 </script>
 
@@ -21,14 +17,6 @@
         <NavItem>
             <NavLink href="#about/">About</NavLink>
         </NavItem>
-        <Dropdown nav inNavbar>
-            <DropdownToggle nav caret>Portfolio</DropdownToggle>
-            <DropdownMenu dark>
-                <DropdownItem>Classes.gg</DropdownItem>
-                <DropdownItem>Dragonfire</DropdownItem>
-                <DropdownItem>Housyn</DropdownItem>
-            </DropdownMenu>
-        </Dropdown>
     </Nav>
 </Navbar>
 
