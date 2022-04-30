@@ -6,7 +6,7 @@
     <h1 class="text-light">About</h1>
     <p class="lead text-muted">
         I am an F1 software engineer who graduated from University of Exeter with First-Class Honours.<br>
-        Aside from programming, I am interested in weightlifting, rugby and <a href="https://www.chess.com/member/fredglass">chess</a>
+        Aside from programming, I am interested in weightlifting, rugby and <a href="https://www.chess.com/member/fredglass" target="_blank">chess</a>
     </p>
     <img src="portrait.png" alt="Potrait">
     <p class="lead text-muted pt-3">
@@ -18,7 +18,7 @@
 
 <style>
     img {
-        border: 1px solid #343A40;
+        border: 1px solid #343a40;
         border-radius: .25rem;
     }
 </style>
