@@ -1,38 +1,67 @@
 <script>
-    const nHexagons = 21
     const gitHubLink = "https://github.com/fglass"
-    const hexagons = {
-        2: { src: "posergl.png", href: `${gitHubLink}/poser-gl`, width: 60 },
-        3: { src: "dragonfire.gif", href: "/dragonfire", width: 80 },
-        4: { src: "obsidx.png", href: `${gitHubLink}/obsidx`, width: 45 },
-        9: { src: "classes.png", href: "https://classes.gg/", width: 35 },
-        10: { src: "portrait.png", href: "/about", width: 100 },
-        11: { src: "rpi.png", href: "/rpi", width: 50 },
-        17: { src: "housyn.png", href: "/housyn", width: 50 },
-        18: { src: "github.png", href: gitHubLink, width: 50 },
-        19: { src: "linkedin.png", href: "https://linkedin.com/in/ftglass", width: 50 },
-        20: { src: "email.png", href: "mailto:fred@fred.glass", width: 35 },
+    const items = [
+        { src: "posergl.png", href: `${gitHubLink}/poser-gl`, width: 60 },
+        { src: "dragonfire.gif", href: "/dragonfire", width: 80 },
+        { src: "obsidx.png", href: `${gitHubLink}/obsidx`, width: 45 },
+        { src: "classes.png", href: "https://classes.gg/", width: 35 },
+        { src: "portrait.png", href: "/about", width: 100 },
+        { src: "rpi.png", href: "/rpi", width: 50 },
+        { src: "housyn.png", href: "/housyn", width: 50 },
+        { src: "github.png", href: gitHubLink, width: 50 },
+        { src: "linkedin.png", href: "https://linkedin.com/in/ftglass", width: 50 },
+        { src: "email.png", href: "mailto:fred@fred.glass", width: 35 },
+    ]
+
+    const hexLayouts = {
+        0: { length: 10, positions: [0, 4, 2, 3, 1, 5, 6, 7, 8, 9] },
+        501: { length: 12, positions: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] },
+        784: { length: 15, positions: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] },
+        1080: { length: 21, positions: [2, 3, 4, 9, 10, 11, 17, 18, 19, 20] },
     }
+
+    const getLayout = (pageWidth) => {
+        for (const [width, layout] of Object.entries(hexLayouts).reverse()) {
+            if (pageWidth >= width) {
+                return layout
+            }
+        }
+    }
+
+    const getItem = (i) => {
+        const itemIdx = layout.positions.indexOf(i)
+        return items[itemIdx]
+    }
+
+    let innerWidth = window.innerWidth;
+    $: layout = getLayout(innerWidth)
 </script>
+
+<svelte:window
+    bind:innerWidth
+/>
 
 <div class="grid">
     <ul class="list">
-        {#each {length: nHexagons}  as _, i}
+        {#each layout as _, i (i)}
+            {@const item = getItem(i)}
             <li class="hex">
                 <div class="hex-content">
-                    <div class={`hex-outer ${i in hexagons ? '': 'hex-empty'}`}>
-                        {#if i in hexagons}
-                            <a href={hexagons[i].href} target={hexagons[i].href.includes('http') ? '_blank': ''}>
+                    {#if item !== undefined}
+                        <div class="hex-outer">
+                            <a href={item.href} target={item.href.includes('http') ? '_blank': ''}>
                                 <div class="hex-inner">
                                     <img
-                                        src={hexagons[i].src}
+                                        src={item.src}
+                                        style={`width: ${item.width}%;`}
                                         alt="Hex"
-                                        style={`width: ${hexagons[i].width}%;`}
                                     />
                                 </div>
                             </a>
-                        {/if}
-                    </div>
+                        </div>
+                    {:else}
+                        <div class="hex-outer hex-empty"></div>
+                    {/if}
                 </div>
             </li>
         {/each}
@@ -117,7 +146,7 @@
         }
     }
 
-    @media screen and (min-width: 501px) and (max-width: 784px) {
+    @media screen and (min-width: 501px) and (max-width: 783px) {
         .grid {
             .list {
                 --amount: 3;
