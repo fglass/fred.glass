@@ -5,7 +5,7 @@
 	import AboutPage from "./page/AboutPage.svelte";
 	import DragonfirePage from "./page/DragonfirePage.svelte";
 	import HousynPage from "./page/HousynPage.svelte";
-	import OtherPage from "./page/OtherPage.svelte";
+	import MiscPage from "./page/MiscPage.svelte";
 </script>
 
 <main>
@@ -14,7 +14,7 @@
 		<Route path="/about"><AboutPage /></Route>
 		<Route path="/dragonfire"><DragonfirePage /></Route>
 		<Route path="/housyn"><HousynPage /></Route>
-		<Route path="/other"><OtherPage /></Route>
+		<Route path="/misc"><MiscPage /></Route>
 		<Route path="/"><LandingPage /></Route>
 	</Router>
 </main>

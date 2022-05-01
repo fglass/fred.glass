@@ -12,6 +12,12 @@ body {
 	background-color: #282b2e !important;
 }
 
+.img {
+    max-width:100%;
+    height:auto;
+}
+
+
 a, a:link, a:hover, a:active, a:visited {
 	color: #e3e5e5 !important;
     text-decoration: none !important;

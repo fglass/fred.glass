@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="container" >
-    <img class="img" src="dragonfire.gif" alt="Dragonfire">
+    <img class="img" src="dragonfire/logo.gif" alt="Dragonfire">
     <h1 class="header pt-3">
         An <a href="https://oldschool.runescape.com">Old School RuneScape</a> Emulation
     </h1>

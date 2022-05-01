@@ -2,11 +2,11 @@
     const gitHubLink = "https://github.com/fglass"
     const items = [
         { src: "posergl.png", href: `${gitHubLink}/poser-gl`, width: 60 },
-        { src: "dragonfire.gif", href: "/dragonfire", width: 80 },
+        { src: "dragonfire.png", href: "/dragonfire", width: 67 },
         { src: "stick-school.png", href: `${gitHubLink}/stick-school`, width: 60 },
-        { src: "classes.png", href: "https://classes.gg/", width: 35 },
+        { src: "classesgg.png", href: "https://classes.gg/", width: 35 },
         { src: "portrait.png", href: "/about", width: 100 },
-        { src: "rpi.png", href: "/other", width: 50 },
+        { src: "rpi.png", href: "/misc", width: 50 },
         { src: "housyn.png", href: "/housyn", width: 50 },
         { src: "github.png", href: gitHubLink, width: 50 },
         { src: "linkedin.png", href: "https://linkedin.com/in/ftglass", width: 50 },
@@ -14,10 +14,10 @@
     ]
 
     const hexLayouts = {
-        0: { length: 10, positions: [0, 4, 2, 3, 1, 5, 6, 7, 8, 9] },
-        501: { length: 12, positions: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] },
-        784: { length: 15, positions: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] },
-        1080: { length: 21, positions: [2, 3, 4, 9, 10, 11, 17, 18, 19, 20] },
+        0: { length: 10, positions: [2, 1, 3, 4, 0, 5, 6, 7, 8, 9] },
+        481: { length: 12, positions: [0, 1, 2, 3, 4, 5, 7, 6, 8, 10] },
+        769: { length: 15, positions: [0, 1, 6, 3, 2, 5, 4, 7, 8, 9] },
+        1200: { length: 21, positions: [2, 3, 4, 9, 10, 11, 17, 18, 19, 20] },
     }
 
     const getLayout = (pageWidth) => {
@@ -34,6 +34,7 @@
     }
 
     let innerWidth = window.innerWidth;
+    let layout = hexLayouts[0]
     $: layout = getLayout(innerWidth)
 </script>
 
@@ -49,7 +50,7 @@
                 <div class="hex-content">
                     {#if item !== undefined}
                         <div class="hex-outer">
-                            <a href={item.href} target={item.href.includes('http') ? '_blank': ''}>
+                            <a href={item.href} target={item.href.includes("http") ? "_blank" : ""}>
                                 <div class="hex-inner">
                                     <img
                                         src={item.src}
@@ -74,18 +75,16 @@
     $inner-colour: rgb(52, 58, 64);
     $clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
 
-    @mixin hex-item($amount) {
-        // Columns
+    @mixin hex-item($amount, $invert) {
         @for $i from 1 through $amount {
             &:nth-of-type(#{$amount}n + #{$i}) {
                 grid-column: #{$i + $i - 1} / span 3;
-                @if $i % 2 == 0 {
+                @if $i % 2 == if($invert, 1, 0) {
                     grid-row: calc(var(--counter) + var(--counter) - 1) / span 2;
                 }
             }
         }
 
-        // Rows
         @for $i from 1 through 20 {
             &:nth-of-type(n + #{$i * $amount + 1}) {
                 --counter: #{$i + 1};
@@ -118,50 +117,50 @@
         }
     }
 
-    @media screen and (min-width: 1080px) {
+    @media screen and (min-width: 1200px) {
         .grid {
             .list {
                 --amount: 7;
                 --counter: 1;
             }
             .hex {
-                @include hex-item(7);
+                @include hex-item(7, false);
             }
         }
     }
 
-    @media screen and (min-width: 784px) and (max-width: 1079px) {
+    @media screen and (min-width: 769px) and (max-width: 1199px) {
         .grid {
             .list {
                 --amount: 5;
                 --counter: 1;
             }
             .hex {
-                @include hex-item(5);
+                @include hex-item(5, false);
             }
         }
     }
 
-    @media screen and (min-width: 501px) and (max-width: 783px) {
+    @media screen and (min-width: 481px) and (max-width: 768px) {
         .grid {
             .list {
                 --amount: 3;
                 --counter: 1;
             }
             .hex {
-                @include hex-item(3);
+                @include hex-item(3, false);
             }
         }
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 480px) {
         .grid {
             .list {
                 --amount: 2;
                 --counter: 1;
             }
             .hex {
-                @include hex-item(2);
+                @include hex-item(2, true);
             }
         }
     }
@@ -202,7 +201,7 @@
     }
 
     .hex-empty:hover {
-        background-color: rgb(52, 58, 64);
+        background-color: $inner-colour;
     }
 
     img {

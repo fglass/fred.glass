@@ -14,8 +14,11 @@
 </svelte:head>
 
 <div class="container">
-    <h1 class="text-light">Other Projects</h1>
-    <div class="cards">
+    <h1 class="text-light">Miscellaneous</h1>
+    <p class="lead text-secondary">
+        A collection of small, experimental projects created for fun or to solve a problem
+    </p>
+    <div class="cards mt-4">
         <RepoCard slug="fglass/readunwise" theme={theme} />
         <RepoCard slug="fglass/obsidx" theme={theme} />
         <RepoCard slug="fglass/advent-of-code" theme={theme} />
@@ -24,10 +27,16 @@
 
 <style>
     .cards {
-        margin-top: 2.5em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 1.5em;
         row-gap: 1.5em;
+    }
+
+    @media screen and (max-width: 768px) {
+        .cards {
+            grid-template-columns: auto;
+            row-gap: 1em;
+        }
     }
 </style>
