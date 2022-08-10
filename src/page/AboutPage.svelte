@@ -5,8 +5,8 @@
 <div class="container">
     <h1 class="text-light">About</h1>
     <p class="lead text-secondary">
-        I am an F1 software engineer who graduated from University of Exeter with First-Class Honours.<br>
-        Aside from programming, I am interested in chess, rugby and weightlifting
+        I am an F1 software engineer who graduated from the University of Exeter with First-Class Honours.<br>
+        Aside from programming, I am interested in weightlifting, rugby and chess
     </p>
     <div class="mt-4">
         <img src="portrait.png" alt="Potrait">

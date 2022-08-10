@@ -6,7 +6,7 @@
         { src: "stick-school.png", href: `${gitHubLink}/stick-school`, width: 60 },
         { src: "classesgg.png", href: "https://classes.gg/", width: 35 },
         { src: "portrait.png", href: "/about", width: 100 },
-        { src: "rpi.png", href: "/misc", width: 50 },
+        { src: "puzzle.png", href: "/misc", width: 35 },
         { src: "housyn.png", href: "/housyn", width: 50 },
         { src: "github.png", href: gitHubLink, width: 50 },
         { src: "linkedin.png", href: "https://linkedin.com/in/ftglass", width: 50 },
@@ -16,7 +16,7 @@
     const hexLayouts = {
         0: { length: 10, positions: [2, 1, 3, 4, 0, 5, 6, 7, 8, 9] },
         481: { length: 12, positions: [0, 1, 2, 3, 4, 5, 7, 6, 8, 10] },
-        769: { length: 15, positions: [0, 1, 6, 3, 2, 5, 4, 7, 8, 9] },
+        769: { length: 15, positions: [0, 1, 5, 6, 2, 4, 3, 7, 8, 9] },
         1200: { length: 21, positions: [2, 3, 4, 9, 10, 11, 17, 18, 19, 20] },
     }
 
@@ -50,7 +50,7 @@
                 <div class="hex-content">
                     {#if item !== undefined}
                         <div class="hex-outer">
-                            <a href={item.href} target={item.href.includes("http") ? "_blank" : ""}>
+                            <a href={item.href}>
                                 <div class="hex-inner">
                                     <img
                                         src={item.src}
@@ -95,7 +95,7 @@
     .grid {
         width: 100%;
         margin: auto;
-        padding: 5%;
+        padding: 2.5%;
 
         .list {
             --amount: 7;

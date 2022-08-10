@@ -1,7 +1,7 @@
 <script>
 	import { Router, Route } from "svelte-routing";
 	import Nav from './Nav.svelte';
-	import LandingPage from './page/LandingPage.svelte';
+	import HomePage from './page/HomePage.svelte';
 	import AboutPage from "./page/AboutPage.svelte";
 	import DragonfirePage from "./page/DragonfirePage.svelte";
 	import HousynPage from "./page/HousynPage.svelte";
@@ -15,7 +15,7 @@
 		<Route path="/dragonfire"><DragonfirePage /></Route>
 		<Route path="/housyn"><HousynPage /></Route>
 		<Route path="/misc"><MiscPage /></Route>
-		<Route path="/"><LandingPage /></Route>
+		<Route path="/"><HomePage /></Route>
 	</Router>
 </main>
 
