@@ -1,7 +1,7 @@
 <script>
     const gitHubLink = "https://github.com/fglass"
     const items = [
-        { src: "posergl.png", href: `${gitHubLink}/poser-gl`, width: 60 },
+        { src: "posergl.png", href: `/poser-gl`, width: 60 },
         { src: "dragonfire.png", href: "/dragonfire", width: 67 },
         { src: "stick-school.png", href: `${gitHubLink}/stick-school`, width: 60 },
         { src: "classesgg.png", href: "https://classes.gg/", width: 35 },

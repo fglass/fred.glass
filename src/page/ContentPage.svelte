@@ -10,13 +10,15 @@
 <div class="container">
     {#if image}
         <div class="mt-4">
-            <img src={image} alt="Image" width="200">
+            <img src={image} class={title ? "img-with-title" : ""} alt="Image">
         </div>
     {/if}
-    <h1 class="text-light"># {title}</h1>
-    <p class="lead text-secondary">
-        <slot />
-    </p>
+    <h1>{title || ''}</h1>
+    <div class="content">
+        <p class="lead">
+            <slot />
+        </p>
+    </div>
 </div>
 
 <style>
@@ -30,7 +32,10 @@
     p {
         text-align: justify;
     }
-    img {
+    .content {
+        padding-bottom: 15px;
+    }
+    .img-with-title {
         margin-bottom: 30px;
         border: 1px solid #343a40;
         border-radius: .25rem;
