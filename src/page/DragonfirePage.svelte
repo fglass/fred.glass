@@ -16,14 +16,14 @@
 </svelte:head>
 
 <ContentPage image="dragonfire/logo.gif">
-    <p class="lead">An Old School RuneScape (OSRS) emulation created for educational purposes</p>
+    <p>An Old School RuneScape (OSRS) emulation created for educational purposes</p>
     <h2>Features</h2>
     <ul>
         <li>All prominent OSRS content implemented</li>
-        <li>Custom Sailing skill</li>
         <li>Sims-esque Construction skill</li>
+        <li>Custom Sailing skill</li>
         <li>Procedurally generated islands</li>
-        <li>Hot reloadable Kotlin plugins</li>
+        <li>Hot reloadable content plugins</li>
         <li>Bespoke 3D models</li>
     </ul>
     <h2>Media</h2>

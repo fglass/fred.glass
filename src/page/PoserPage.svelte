@@ -15,7 +15,7 @@
 </svelte:head>
 
 <ContentPage image="posergl.png">
-    <p class="lead">A RuneScape animation editor, written in Kotlin and rendered using OpenGL</p>
+    <p>A RuneScape animation editor, written in Kotlin and rendered using OpenGL</p>
     <h2>Features</h2>
     <ul>
         <li>3D editing gizmos: translation, rotation, scale</li>

@@ -13,9 +13,9 @@
             <img src={image} class={title ? "img-with-title" : ""} alt="Image">
         </div>
     {/if}
-    <h1>{title || ''}</h1>
+    <h1 class="title">{title || ''}</h1>
     <div class="content">
-        <p class="lead">
+        <p>
             <slot />
         </p>
     </div>
@@ -23,21 +23,24 @@
 
 <style>
     .container {
-        max-width: 688px;
+        max-width: 48rem;
     }
-    h1 {
+    .title {
+        font-size: 1.875rem;
         padding-bottom: 15px;
         border-bottom: 1px solid rgba(84, 84, 84, 0.48);
-    }
-    p {
-        text-align: justify;
     }
     .content {
         padding-bottom: 15px;
     }
     .img-with-title {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         border: 1px solid #343a40;
         border-radius: .25rem;
+    }
+    p {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 1.5;
     }
 </style>

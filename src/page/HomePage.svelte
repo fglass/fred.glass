@@ -70,9 +70,9 @@
 </div>
 
 <style lang="scss">
-    $outline-colour: rgb(52, 58, 64);
-    $outer-colour: rgb(40, 43, 46);
-    $inner-colour: rgb(52, 58, 64);
+    $outline-colour: var(--bg-secondary);
+    $outer-colour: var(--bg-primary);
+    $inner-colour: var(--bg-secondary);
     $clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
 
     @mixin hex-item($amount, $invert) {
