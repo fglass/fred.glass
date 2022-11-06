@@ -17,9 +17,9 @@
     <p>A RuneScape animation editor, written in Kotlin and rendered using OpenGL</p>
     <h2>Features</h2>
     <ul>
-        <li>3D editing gizmos: translation, rotation, scale</li>
         <li>Keyframe editing: adding, copying, pasting, interpolating, deleting</li>
-        <li>Animation exporting (custom & proprietary formats)</li>
+        <li>3D editing gizmos: translation, rotation, scale</li>
+        <li>Animation exporting: custom & proprietary formats</li>
         <li>Composite model support with item equipping</li>
         <li>Resizable UI with a dynamic animation timeline</li>
         <li>Selectable polygon modes & shading types</li>

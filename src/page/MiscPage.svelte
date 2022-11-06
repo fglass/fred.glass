@@ -8,7 +8,7 @@
 
 <ContentPage title="Miscellaneous">
     <h2>Projects</h2>
-    <small>A collection of small, experimental projects created for fun or to solve a problem</small>
+    <p class="subheading">A collection of small, experimental projects created for fun or to solve a problem</p>
     <ul>
         <li><a href="https://github.com/fglass/readunwise">readunwise</a>: CLI for managing Amazon Kindle highlights</li>
         <li><a href="https://github.com/fglass/obsidx">obsidx</a>: quick launcher for markdown files in <a href="https://obsidian.md">Obsidian</a> vaults</li>
@@ -16,38 +16,50 @@
     </ul>
     <h2>Reading</h2>
     2022
-    <ul>
-        <li>Pragmatic Programmer<span>⭐⭐</span></li>
-        <li>Atomic Habits<span>⭐⭐⭐⭐</span></li>
-        <li>Finish: Give Yourself the Gift of Done<span>⭐</span></li>
-        <li>Clean Code<span>⭐⭐⭐⭐</span></li>
-        <li>Designing Data-Intensive Applications<span>⭐⭐⭐⭐⭐</span></li>
-        <li>How Life Imitates Chess<span>⭐⭐</span></li>
-        <li>Cracking the Coding Interview<span>⭐⭐⭐</span></li>
-        <li>Architecture Patterns with Python<span>⭐⭐⭐</span></li>
-        <li>How to Solve It<span>⭐⭐⭐</span></li>
-    </ul>
+    <table>
+        <tr><td class="book">Pragmatic Programmer</td><td class="rating">⭐⭐</td></tr>
+        <tr><td class="book">Atomic Habits</td><td class="rating">⭐⭐⭐⭐</td></tr>
+        <tr><td class="book">Finish: Give Yourself the Gift of Done</td><td class="rating">⭐</td></tr>
+        <tr><td class="book">Clean Code</td><td class="rating">⭐⭐⭐⭐</td></tr>
+        <tr><td class="book">Designing Data-Intensive Applications</td><td class="rating">⭐⭐⭐⭐⭐</td></tr>
+        <tr><td class="book">How Life Imitates Chess</td><td class="rating">⭐⭐</td></tr>
+        <tr><td class="book">Cracking the Coding Interview</td><td class="rating">⭐⭐⭐</td></tr>
+        <tr><td class="book">Architecture Patterns with Python</td><td class="rating">⭐⭐⭐</td></tr>
+        <tr><td class="book">How to Solve It</td><td class="rating">⭐⭐⭐</td></tr>
+    </table>
     2021
-        <ul>
-            <li>Thinking, Fast and Slow<span>⭐⭐</span></li>
-            <li>The Stand<span>⭐⭐⭐⭐⭐</span></li>
-            <li>How to Win Friends and Influence People<span>⭐⭐⭐⭐</span></li>
-            <li>Happy Sexy Millionaire<span>⭐</span></li>
-            <li>Never Split the Difference<span>⭐⭐⭐⭐</span></li>
-            <li>Animal Farm<span>⭐⭐⭐⭐⭐</span></li>
-            <li>1984<span>⭐⭐⭐⭐</span></li>
-            <li>Deep Work<span>⭐⭐⭐⭐</span></li>
-            <li>Game Programming Patterns<span>⭐⭐⭐</span></li>
-            <li>Surely You're Joking Mr. Feynman<span>⭐⭐⭐</span></li>
-            <li>Ready Player One<span>⭐⭐⭐⭐⭐</span></li>
-            <li>Ready Player Two<span>⭐⭐</span></li>
-            <li>The 4-Hour Work Week<span>⭐⭐⭐</span></li>
-            <li>Dune Messiah<span>⭐⭐⭐</span></li>
-    </ul>
+        <table>
+            <tr><td class="book">Thinking, Fast and Slow</td><td class="rating">⭐⭐</td></tr>
+            <tr><td class="book">The Stand</td><td class="rating">⭐⭐⭐⭐⭐</td></tr>
+            <tr><td class="book">How to Win Friends and Influence People</td><td class="rating">⭐⭐⭐⭐</td></tr>
+            <tr><td class="book">Happy Sexy Millionaire</td><td class="rating">⭐</td></tr>
+            <tr><td class="book">Never Split the Difference</td><td class="rating">⭐⭐⭐⭐</td></tr>
+            <tr><td class="book">Animal Farm</td><td class="rating">⭐⭐⭐⭐⭐</td></tr>
+            <tr><td class="book">1984</td><td class="rating">⭐⭐⭐⭐</td></tr>
+            <tr><td class="book">Deep Work</td><td class="rating">⭐⭐⭐⭐</td></tr>
+            <tr><td class="book">Game Programming Patterns</td><td class="rating">⭐⭐⭐</td></tr>
+            <tr><td class="book">Surely You're Joking Mr. Feynman</td><td class="rating">⭐⭐⭐</td></tr>
+            <tr><td class="book">Ready Player One</td><td class="rating">⭐⭐⭐⭐⭐</td></tr>
+            <tr><td class="book">Ready Player Two</td><td class="rating">⭐⭐</td></tr>
+            <tr><td class="book">The 4-Hour Work Week</td><td class="rating">⭐⭐⭐</td></tr>
+            <tr><td class="book">Dune Messiah</td><td class="rating">⭐⭐⭐</td></tr>
+    </table>
 </ContentPage>
 
 <style>
-    span {
-        float: right;
+    .subheading {
+        margin-bottom: 0;
+    }
+    table {
+        width: 100%;
+    }
+    .book {
+        margin-left: 32px;
+        display: list-item;
+        text-align: left;
+    }
+    .rating {
+        text-align: right;
+        vertical-align: top;
     }
 </style>

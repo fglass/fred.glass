@@ -94,7 +94,7 @@
 
     .grid {
         width: 100%;
-        max-width: 1750px;
+        max-width: 1500px;
         margin: auto;
         padding: 2.5%;
 
