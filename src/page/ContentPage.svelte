@@ -1,5 +1,5 @@
 <script>
-    export let title;
+    export let title = undefined;
     export let image;
 </script>
 
@@ -10,7 +10,7 @@
 <div class="container">
     {#if image}
         <div class="mt-4">
-            <img src={image} class={title ? "img-with-title" : ""} alt="Image">
+            <img src={image} class={title ? "img-with-title" : ""} alt="Logo">
         </div>
     {/if}
     <h1 class="title">{title || ''}</h1>
@@ -25,6 +25,14 @@
     .container {
         max-width: 48rem;
     }
+    img {
+        max-width: 100%;
+    }
+    .img-with-title {
+        margin-bottom: 15px;
+        border: 1px solid #343a40;
+        border-radius: .25rem;
+    }
     .title {
         font-size: 1.875rem;
         padding-bottom: 15px;
@@ -32,11 +40,6 @@
     }
     .content {
         padding-bottom: 15px;
-    }
-    .img-with-title {
-        margin-bottom: 15px;
-        border: 1px solid #343a40;
-        border-radius: .25rem;
     }
     p {
         text-align: justify;

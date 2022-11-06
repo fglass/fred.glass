@@ -1,12 +1,11 @@
 <script>
     import ContentPage from "./ContentPage.svelte";
-    import { Splide, SplideSlide } from '@splidejs/svelte-splide';
-    import '@splidejs/svelte-splide/css';
-    const cards = [
-        { src: "dab.gif", title: "Dab" },
-        { src: "dragon.png", title: "Dragon" },
-        { src: "wave.gif", title: "Wave" },
-        { src: "drink.png", title: "Drink" },
+    import ImageSlider from "../ImageSlider.svelte";
+    const images = [
+        { src: "posergl/dab.gif", label: "Dab" },
+        { src: "posergl/dragon.png", label: "Dragon" },
+        { src: "posergl/wave.gif", label: "Wave" },
+        { src: "posergl/drink.png", label: "Drink" },
     ];
 </script>
 
@@ -30,20 +29,5 @@
         <li><a href="https://github.com/fglass/poser-gl">Open source</a></li>
     </ul>
     <h2>Media</h2>
-    <Splide aria-label="Media">
-        {#each cards as card}
-            <SplideSlide>
-                <img src={`posergl/${card.src}`} alt={card.title}/>
-            </SplideSlide>
-        {/each}
-    </Splide>
+    <ImageSlider images={images} />
 </ContentPage>
-
-<style>
-    span {
-        float: right;
-    }
-    img {
-        width: 100%;
-    }
-</style>

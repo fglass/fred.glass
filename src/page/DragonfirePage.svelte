@@ -1,13 +1,12 @@
 <script>
     import ContentPage from "./ContentPage.svelte";
-    import { Splide, SplideSlide } from '@splidejs/svelte-splide';
-    import '@splidejs/svelte-splide/css';
-    const cards = [
-        { src: "sailing.gif", title: "Sailing" },
-        { src: "construction.png", title: "Construction" },
-        { src: "interface.gif", title: "Interface" },
-        { src: "plugins.gif", title: "Plugins" },
-        { src: "models.png", title: "Models" },
+    import ImageSlider from "../ImageSlider.svelte";
+    const images = [
+        { src: "dragonfire/sailing.gif", label: "Sailing" },
+        { src: "dragonfire/construction.png", label: "Construction" },
+        { src: "dragonfire/interface.gif", label: "Interface" },
+        { src: "dragonfire/plugins.gif", label: "Plugins" },
+        { src: "dragonfire/models.png", label: "Models" },
     ];
 </script>
 
@@ -24,20 +23,9 @@
         <li>Custom Sailing skill</li>
         <li>Procedurally generated islands</li>
         <li>Hot reloadable content plugins</li>
+        <li>Unique minigames</li>
         <li>Bespoke 3D models</li>
     </ul>
     <h2>Media</h2>
-    <Splide aria-label="Media">
-        {#each cards as card}
-            <SplideSlide>
-                <img src={`dragonfire/${card.src}`} alt={card.title}/>
-            </SplideSlide>
-        {/each}
-    </Splide>
+    <ImageSlider images={images} />
 </ContentPage>
-
-<style>
-    img {
-        width: 100%;
-    }
-</style>
