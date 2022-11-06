@@ -1,26 +1,13 @@
-<svelte:head>
-    <title>fred.glass · About</title>
-</svelte:head>
+<script>
+    import ContentPage from "./ContentPage.svelte";
+</script>
 
-<div class="container">
-    <h1 class="text-light">About</h1>
-    <p class="lead text-secondary">
-        I am an F1 software engineer who graduated from the University of Exeter with First-Class Honours.<br>
-        Aside from programming, I am interested in weightlifting, rugby and chess
-    </p>
-    <div class="mt-4">
-        <img src="portrait.png" alt="Potrait">
-        <p class="lead text-muted pt-3">
-            Find out more at:<br>
-            <a href="https://linkedin.com/in/ftglass" target="_blank" class="btn btn-outline-primary my-2">LinkedIn</a>
-            <a href="https://github.com/fglass" target="_blank" class="btn btn-outline-secondary my-2">GitHub</a>
-        </p>
-    </div>
-</div>
-
-<style>
-    img {
-        border: 1px solid #343a40;
-        border-radius: .25rem;
-    }
-</style>
+<ContentPage title="About" image="portrait-hex.png">
+    I am a Specialist Software Engineer at McLaren Racing. I previously studied at the University of Exeter, where I was
+    awarded a First-Class Honours degree in Computer Science. Aside from programming, I am interested in
+    weightlifting, rugby and chess.
+    <br><br>
+    <a href="mailto:fred@fred.glass">Email</a> -
+    <a href="https://github.com/fglass" target="_blank">GitHub</a> -
+    <a href="https://linkedin.com/in/ftglass" target="_blank">LinkedIn</a>
+</ContentPage>

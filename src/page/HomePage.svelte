@@ -1,7 +1,7 @@
 <script>
     const gitHubLink = "https://github.com/fglass"
     const items = [
-        { src: "posergl.png", href: `${gitHubLink}/poser-gl`, width: 60 },
+        { src: "posergl.png", href: `/poser-gl`, width: 60 },
         { src: "dragonfire.png", href: "/dragonfire", width: 67 },
         { src: "stick-school.png", href: `${gitHubLink}/stick-school`, width: 60 },
         { src: "classesgg.png", href: "https://classes.gg/", width: 35 },
@@ -70,9 +70,9 @@
 </div>
 
 <style lang="scss">
-    $outline-colour: rgb(52, 58, 64);
-    $outer-colour: rgb(40, 43, 46);
-    $inner-colour: rgb(52, 58, 64);
+    $outline-colour: var(--bg-secondary);
+    $outer-colour: var(--bg-primary);
+    $inner-colour: var(--bg-secondary);
     $clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
 
     @mixin hex-item($amount, $invert) {
@@ -94,6 +94,7 @@
 
     .grid {
         width: 100%;
+        max-width: 1500px;
         margin: auto;
         padding: 2.5%;
 

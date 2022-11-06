@@ -6,6 +6,7 @@
 	import DragonfirePage from "./page/DragonfirePage.svelte";
 	import HousynPage from "./page/HousynPage.svelte";
 	import MiscPage from "./page/MiscPage.svelte";
+	import PoserGLPage from "./page/PoserPage.svelte";
 </script>
 
 <main>
@@ -14,6 +15,7 @@
 		<Route path="/about"><AboutPage /></Route>
 		<Route path="/dragonfire"><DragonfirePage /></Route>
 		<Route path="/housyn"><HousynPage /></Route>
+		<Route path="/poser-gl"><PoserGLPage /></Route>
 		<Route path="/misc"><MiscPage /></Route>
 		<Route path="/"><HomePage /></Route>
 	</Router>
