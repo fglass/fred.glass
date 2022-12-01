@@ -1,5 +1,5 @@
 <script>
-    import ContentPage from "./ContentPage.svelte";
+    import ContentPage from "../ContentPage.svelte";
     import ImageSlider from "../ImageSlider.svelte";
     const images = [
         { src: "dragonfire/sailing.gif", label: "Sailing" },

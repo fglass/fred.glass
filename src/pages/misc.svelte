@@ -1,5 +1,5 @@
 <script>
-    import ContentPage from "./ContentPage.svelte";
+    import ContentPage from "../ContentPage.svelte";
 </script>
 
 <svelte:head>

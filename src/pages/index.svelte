@@ -1,7 +1,7 @@
 <script>
     const gitHubLink = "https://github.com/fglass"
     const items = [
-        { src: "posergl.png", href: `/poser-gl`, width: 60 },
+        { src: "posergl.png", href: `/posergl`, width: 60 },
         { src: "dragonfire.png", href: "/dragonfire", width: 67 },
         { src: "stick-school.png", href: `${gitHubLink}/stick-school`, width: 60 },
         { src: "classesgg.png", href: "https://classes.gg/", width: 35 },
@@ -94,7 +94,7 @@
 
     .grid {
         width: 100%;
-        max-width: 1500px;
+        max-width: 1350px;
         margin: auto;
         padding: 2.5%;
 

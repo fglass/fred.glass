@@ -1,5 +1,6 @@
 /node_modules/
 /public/build/
+.routify
 .idea/
 .DS_Store
 *.md

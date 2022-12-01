@@ -1,5 +1,5 @@
 <script>
-    import ContentPage from "./ContentPage.svelte";
+    import ContentPage from "../ContentPage.svelte";
 </script>
 
 <ContentPage title="About" image="portrait-hex.png">
