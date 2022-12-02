@@ -94,7 +94,7 @@
 
     .grid {
         width: 100%;
-        max-width: 1350px;
+        max-width: 1500px;
         margin: auto;
         padding: 2.5%;
 
@@ -115,6 +115,12 @@
             grid-row: calc(var(--counter) + var(--counter)) / span 2;
             height: 0;
             padding-bottom: 90%;
+        }
+    }
+
+    @media screen and (max-width: 2000px) {
+        .grid {
+            max-width: 1350px;
         }
     }
 

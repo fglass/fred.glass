@@ -8,3 +8,9 @@
         <img src="logo.png" alt="FG" width="38" height="30">
     </NavbarBrand>
 </Navbar>
+
+<style>
+    img {
+        pointer-events: none;
+    }
+</style>

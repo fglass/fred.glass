@@ -41,4 +41,11 @@
         font-size: 16px;
         line-height: 1.5;
     }
+
+    @media screen and (max-width: 480px) {
+        .container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
 </style>
