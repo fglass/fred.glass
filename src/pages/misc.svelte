@@ -26,10 +26,11 @@
         <tr><td class="book">Cracking the Coding Interview</td><td class="rating">⭐⭐⭐</td></tr>
         <tr><td class="book">Architecture Patterns with Python</td><td class="rating">⭐⭐⭐</td></tr>
         <tr><td class="book">How to Solve It</td><td class="rating">⭐⭐⭐</td></tr>
+        <tr><td class="book">The Go-Giver</td><td class="rating">⭐⭐⭐⭐</td></tr>
     </table>
     2021
         <table>
-            <tr><td class="book">Thinking, Fast and Slow</td><td class="rating">⭐⭐</td></tr>
+            <tr><td class="book">Thinking, Fast and Slow</td><td class="rating">⭐⭐⭐</td></tr>
             <tr><td class="book">The Stand</td><td class="rating">⭐⭐⭐⭐⭐</td></tr>
             <tr><td class="book">How to Win Friends and Influence People</td><td class="rating">⭐⭐⭐⭐</td></tr>
             <tr><td class="book">Happy Sexy Millionaire</td><td class="rating">⭐</td></tr>
