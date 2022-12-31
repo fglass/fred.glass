@@ -27,6 +27,8 @@
         <tr><td class="book">Architecture Patterns with Python</td><td class="rating">⭐⭐⭐</td></tr>
         <tr><td class="book">How to Solve It</td><td class="rating">⭐⭐⭐</td></tr>
         <tr><td class="book">The Go-Giver</td><td class="rating">⭐⭐⭐⭐</td></tr>
+        <tr><td class="book">Essentialism</td><td class="rating">⭐⭐</td></tr>
+        <tr><td class="book">A Philosophy of Software Design</td><td class="rating">⭐⭐⭐⭐</td></tr>
     </table>
     2021
         <table>
