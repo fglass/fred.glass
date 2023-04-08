@@ -4,7 +4,7 @@
         { src: "posergl.png", href: `/posergl`, width: 60 },
         { src: "dragonfire.png", href: "/dragonfire", width: 67 },
         { src: "stick-school.png", href: `${gitHubLink}/stick-school`, width: 60 },
-        { src: "classesgg.png", href: "https://classes.gg/", width: 35 },
+        { src: "classesgg.png", href: `${gitHubLink}/classes.gg`, width: 35 },
         { src: "portrait.png", href: "/about", width: 100 },
         { src: "puzzle.png", href: "/misc", width: 35 },
         { src: "housyn.png", href: "/housyn", width: 50 },

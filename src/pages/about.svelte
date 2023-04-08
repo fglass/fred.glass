@@ -3,7 +3,7 @@
 </script>
 
 <ContentPage title="About" image="portrait-hex.png">
-    I am a Specialist Software Engineer at McLaren Racing. I previously studied at the University of Exeter, where I was
+    I am a Senior Software Engineer at Bloomberg, previously at McLaren F1. I studied at the University of Exeter, where I was
     awarded a First-Class Honours degree in Computer Science. Aside from programming, I am interested in
     weightlifting, rugby and chess.
     <br><br>
