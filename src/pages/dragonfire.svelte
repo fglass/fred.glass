@@ -14,7 +14,11 @@
     <title>fred.glass · Dragonfire</title>
 </svelte:head>
 
-<ContentPage image="dragonfire/logo.gif">
+<ContentPage 
+    image="dragonfire/logo.gif" 
+    --img-max-width="500px" 
+    --img-aspect-ratio="500 / 470"
+>
     <p>An Old School RuneScape (OSRS) emulation created for educational purposes</p>
     <h2>Features</h2>
     <ul>

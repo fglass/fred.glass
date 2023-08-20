@@ -13,7 +13,11 @@
     <title>fred.glass · PoserGL</title>
 </svelte:head>
 
-<ContentPage image="posergl.png">
+<ContentPage 
+    image="posergl.png"
+    --img-max-width="310px" 
+    --img-aspect-ratio="310 / 116"
+>
     <p>A RuneScape animation editor, written in Kotlin and rendered using OpenGL</p>
     <h2>Features</h2>
     <ul>

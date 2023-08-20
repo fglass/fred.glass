@@ -26,7 +26,9 @@
         max-width: 48rem;
     }
     img {
-        max-width: 100%;
+        width: 100%;
+        max-width: var(--img-max-width, 500px);
+        aspect-ratio: var(--img-aspect-ratio, auto);
     }
     .title {
         font-size: 1.875rem;
