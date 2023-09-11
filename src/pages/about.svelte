@@ -5,12 +5,12 @@
 <ContentPage 
     title="About" 
     image="portrait-hex.png"
-    --img-max-width="310px" 
-    --img-aspect-ratio="310 / 279"
+    --img-max-width="250px" 
+    --img-aspect-ratio="250 / 225"
 >
-    I am a Senior Software Engineer at Bloomberg, previously at McLaren F1. I studied at the University of Exeter, where I was
-    awarded a First-Class Honours degree in Computer Science. Aside from programming, I am interested in
-    weightlifting, rugby and chess.
+    I am a Senior Software Engineer at Bloomberg, previously at McLaren Racing. 
+    I enjoy <a href="https://www.goodreads.com/user/show/159101094-fred-glass" target="_blank">reading</a>,
+    rugby, weightlifting, F1 & playing <a href="https://lichess.org/@/Expench" target="_blank">chess</a>.
     <br><br>
     <a href="mailto:fred@fred.glass">Email</a> -
     <a href="https://github.com/fglass" target="_blank">GitHub</a> -

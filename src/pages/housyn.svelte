@@ -58,9 +58,6 @@
             <h1 class="text-light">Housyn</h1>
             <p>
                 Algorithmic generation of house music<br>
-                <a href={getResource("final-report.pdf")} target="_blank">
-                    <img src={getResource("pdf.svg")} width="17" alt=""> Dissertation
-                </a>
             </p>
         </div>
     </div>
