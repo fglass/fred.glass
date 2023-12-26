@@ -12,6 +12,7 @@
         <li><a href="https://github.com/fglass/bloog">bloog</a>: search engine for technical blogs</li>
         <li><a href="https://github.com/fglass/readunwise">readunwise</a>: CLI for managing Amazon Kindle highlights</li>
         <li><a href="https://github.com/fglass/obsidx">obsidx</a>: quick launcher for markdown files in <a href="https://obsidian.md">Obsidian</a> vaults</li>
+        <li><a href="https://github.com/fglass/advent-of-code">advent-of-code</a>: incomplete collection of unpolished solutions for <a href="https://adventofcode.com">Advent of Code</a></li>
     </ul>
 </ContentPage>
 
