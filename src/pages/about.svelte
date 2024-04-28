@@ -8,9 +8,8 @@
     --img-max-width="250px" 
     --img-aspect-ratio="250 / 225"
 >
-    I am a Senior Software Engineer at Bloomberg, previously at McLaren Racing.
-    <br><br>Aside from programming, I enjoy chess, weightlifting and sports (F1, rugby, padel). I also like <a href="https://www.goodreads.com/user/show/159101094-fred-glass" target="_blank">reading</a>,
-    generally non-fiction, and I intend to start writing soon – watch this space!
+    I am a Software Engineer at Bloomberg, previously at McLaren Racing.
+    I enjoy weightlifting, chess and sports such as F1, rugby and padel.
     <br><br>
     <a href="mailto:fred@fred.glass">Email</a> -
     <a href="https://github.com/fglass" target="_blank">GitHub</a> -
